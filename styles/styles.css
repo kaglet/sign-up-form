@@ -12,6 +12,7 @@
     --sections-color: rgb(235, 240, 240);
     --generic-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --uniform-padding: 3rem;
+    --hover-displacement: -0.18rem;
 }
 
 body {
@@ -28,7 +29,7 @@ body > section:first-child {
     position: relative;
 }
 
-body > section {
+body > section, body > form {
     background-color: var(--sections-color);
     display: flex;
     flex: 1;
@@ -76,7 +77,6 @@ h2 {
 }
 
 .flex-wrapper {
-    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -113,6 +113,16 @@ button {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1.4rem;
+    transition: transform 0.2s ease-out;
+}
+
+button:hover {
+    background-color: var(--main-theme-color);
+    color: black;
+}
+
+button:active {
+    transform: scale(0.95);
 }
 
 .credit {
@@ -133,8 +143,27 @@ a {
 footer {
     margin: auto;
     padding: 1rem 0rem;
+    color: grey;
+}
+
+footer i {
+    color: grey;
+    position: relative;
+}
+
+footer i:hover {
+    top: var(--hover-displacement);
 }
 
 p > a {
     color: var(--main-theme-color);
+}
+
+p > a:hover {
+    position: relative;
+    top: var(--hover-displacement);
+}
+
+h2 + p {
+    margin-top: 2rem;
 }

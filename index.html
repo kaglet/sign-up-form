@@ -16,7 +16,7 @@
         </span>
     </section>
     
-    <section class="sign-up">
+    <form class="sign-up" action="" method="get">
         <section>
             <p class="desc">This is not a real online service! Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit, sed do eiusmod tempor 
@@ -26,42 +26,46 @@
         </section>
         <section class="form">
             <h2>Let's do this!</h2>
+            <p>
+                (Required fields are followed by
+                <strong><span aria-label="required">*</span></strong>).
+            </p>
             <div class="flex-wrapper">
                 <div>
-                    <label for="first_name">First name</label>
-                    <input type="text" name="first_name" id="first_name">
+                    <label for="first_name">First name <span aria-label="required">*</span></label>
+                    <input type="text" name="first_name" id="first_name" required>
                 </div>
                 <div>
-                    <label for="last_name">Last name</label>
-                    <input type="text" name="last_name" id="last_name">
+                    <label for="last_name">Last name <span aria-label="required">*</span></label>
+                    <input type="text" name="last_name" id="last_name" required>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                    <input type="email" name="email" id="email">
                 </div>
                 <div>
                     <label for="phone">Phone number</label>
-                    <input type="text" name="phone_number" id="phone">
+                    <input type="tel" name="phone_number" id="phone">
                 </div>
                 <div>
-                    <label for="pwd">Password</label>
-                    <input type="text" name="pwd" id="pwd">
+                    <label for="pwd">Password <span aria-label="required">*</span></label>
+                    <input type="password" name="pwd" id="pwd" required>
                 </div>
                 <div>
-                    <label for="confirm_pwd">Confirm password</label>
-                    <input type="text" name="confirm_pwd" id="confirm_pwd">
+                    <label for="confirm_pwd">Confirm password <span aria-label="required">*</span></label>
+                    <input type="password" name="confirm_pwd" id="confirm_pwd" required>
                 </div>
             </div>
         </section>
         <section>
-            <button type="button">Create Account</button>
+            <button type="submit">Create Account</button>
             <p>Already have an account? <a href="./">Sign up</a></p>
         </section>
         <footer>
             Made by kaglet 
-            <a href="https://github.com/kaglet/rock-paper-scissors"> <i class="fa-brands fa-github"> </i></a>
+            <a href="https://github.com/kaglet/sign-up-form"> <i class="fa-brands fa-github"> </i></a>
         </footer>
-    </section>
+    </form>
 </body>
 </html>
 
