@@ -18,8 +18,12 @@ body {
 }
 
 img {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+}
+
+body > section:first-child {
+    position: relative;
 }
 
 body > section {
@@ -31,6 +35,7 @@ body > section {
 
 p {
     font-size: 1.65rem;
+    line-height: 2rem;
 }
 
 h2 {
@@ -55,7 +60,22 @@ button {
     border: 2px solid var(--main-theme-color);
     color: var(--main-theme-color);
     margin: 2rem auto;
-    padding: 0.4em 2em;
+    padding: 0.4em 1.8em;
     font-size: 1.4rem;
     font-weight: bold;
+}
+
+.credit {
+    font-weight: bold;
+    position: absolute;
+    /* width: 100%; - this works too!*/
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: white;
 }
