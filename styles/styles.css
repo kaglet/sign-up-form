@@ -1,20 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Signika:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--generic-font)
 }
 
 :root {
     --section-margin: 2rem;
     --main-theme-color: rgb(166, 119, 79);
-    --main-section-color: rgb(78, 157, 170);
+    --main-section-color: rgb(102, 156, 164);
+    --generic-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
@@ -26,69 +22,31 @@ img {
     width: 100%;
 }
 
-section {
-    flex: 1;
-    background-color: var(--main-section-color);
-}
-
 body > section {
+    background-color: var(--main-section-color);
     display: flex;
     flex-direction: column;
 }  
 
-.sign-up > section {
-    margin-top: 2.5rem;
-    padding: 0.8rem 1rem 0.8rem 1rem;
-    margin-left: var(--section-margin);
-    margin-right: var(--section-margin);
-    background-color: var(--panel-colors);
-    /*positive or negative x or y offset where positive y goes down and x goes as you expect like an html canvas so 0, 0 is centered top left*/
-    box-shadow: -0.4rem 0.4rem var(--main-theme-color);
-}
-
-.sign-up > section:first-of-type {
-    margin-top: 2rem;
-}
-
 p {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: serif;
 }
 
 p:first-child {
-    padding: 3rem 3rem 0rem 3rem;
-    font-size: 2.1rem;
+    font-size: 1.65rem;
 }
 
 h2 {
-    font-family: 'Signika', sans-serif;
     font-size: 2.3rem;
-    display: inline-block;
     font-weight: 400;
 }
 
-h2 + p {
-    font-size: 1.3rem;
+.sign-up {
+    
 }
 
-/*Extra icon potential: "🛫"*/
-
-.sign-up > section:nth-of-type(1)::before {
-    content: "💼";
-}
-
-.sign-up > section:nth-of-type(2)::before {
-    content: "🌟";
-}
-
-.sign-up > section:nth-of-type(3)::before {
-    content: "🌐";
-}
-
-.sign-up > section:nth-of-type(n)::before {
-    display: inline-block;
-    vertical-align: 3.5px;
-    font-size: 2rem;
-    margin-right: 0.3rem;
+.sign-up > section {
+    flex: 1;
 }
 
 button {
@@ -98,7 +56,6 @@ button {
     color: var(--main-theme-color);
     margin: 2rem auto;
     padding: 0.6em 6em;
-    font-family: 'Signika', sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
 }
