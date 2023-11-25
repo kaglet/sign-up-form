@@ -13,6 +13,8 @@
 
 :root {
     --section-margin: 2rem;
+    --main-theme-color: rgb(166, 119, 79);
+    --main-section-color: rgb(78, 157, 170);
 }
 
 body {
@@ -26,7 +28,7 @@ img {
 
 section {
     flex: 1;
-    background-color: rgb(1, 1, 16);
+    background-color: var(--main-section-color);
 }
 
 body > section {
@@ -35,15 +37,17 @@ body > section {
 }  
 
 .sign-up > section {
-    margin-top: 1rem;
-    padding: 0rem 3rem 0rem 1rem;
+    margin-top: 2.5rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
-    border-left: 0.2rem solid rgb(248, 152, 68);
+    background-color: var(--panel-colors);
+    /*positive or negative x or y offset where positive y goes down and x goes as you expect like an html canvas so 0, 0 is centered top left*/
+    box-shadow: -0.4rem 0.4rem var(--main-theme-color);
 }
 
 .sign-up > section:first-of-type {
-    margin-top: 2.9rem;
+    margin-top: 2rem;
 }
 
 p {
@@ -59,11 +63,14 @@ h2 {
     font-family: 'Signika', sans-serif;
     font-size: 2.3rem;
     display: inline-block;
+    font-weight: 400;
 }
 
 h2 + p {
     font-size: 1.3rem;
 }
+
+/*Extra icon potential: "🛫"*/
 
 .sign-up > section:nth-of-type(1)::before {
     content: "💼";
@@ -87,8 +94,8 @@ h2 + p {
 button {
     appearance: none;
     background-color: transparent;
-    border: 2px solid rgb(248, 152, 68);
-    color: rgb(248, 152, 68);
+    border: 2px solid var(--main-theme-color);
+    color: var(--main-theme-color);
     margin: 2rem auto;
     padding: 0.6em 6em;
     font-family: 'Signika', sans-serif;
