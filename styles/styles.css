@@ -148,12 +148,20 @@ footer {
     color: grey;
 }
 
-footer i {
+footer i, footer a {
     color: grey;
     position: relative;
 }
 
-footer i:hover {
+footer a:hover {
+    top: var(--hover-displacement);
+}
+
+.credit a {
+    position: relative;
+}
+
+.credit a:hover {
     top: var(--hover-displacement);
 }
 
@@ -186,4 +194,22 @@ input:invalid {
 
 input:valid {
     color: currentColor;
+}
+
+.logo {
+    background-color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 20%;
+    min-height: 8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 7.5rem;
 }
