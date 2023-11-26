@@ -148,11 +148,11 @@ a {
 footer {
     margin: auto;
     padding: 1rem 0rem;
-    color: grey;
+    color: rgb(99, 99, 99);
 }
 
 footer i, footer a {
-    color: grey;
+    color: rgb(99, 99, 99);
     position: relative;
 }
 
