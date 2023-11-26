@@ -180,6 +180,10 @@ input:invalid {
     background-color: rgb(252, 162, 162, 0.5);
 }
 
+input:focus {
+    outline: none;
+}
+
 input:valid {
     color: currentColor;
     outline: none;
