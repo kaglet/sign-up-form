@@ -216,3 +216,7 @@ input:valid {
     color: white;
     font-size: 7.5rem;
 }
+
+.error {
+    color: red;
+}
