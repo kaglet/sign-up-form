@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: rgb(36, 36, 36);
-    font-family: var(--generic-font)
+    font-family: var(--main-font);
 }
 
 :root {
@@ -13,6 +15,7 @@
     --generic-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --uniform-padding: 3rem;
     --hover-displacement: -0.18rem;
+    --main-font: 'Roboto Slab', serif;
 }
 
 body {
