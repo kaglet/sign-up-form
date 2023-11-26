@@ -32,6 +32,11 @@ signUpBtn.addEventListener('click', () => {
         error.textContent += "⚠ Passwords do not match.";
     } 
 
+    if (pwd.value.length < 8) {
+        errorsPresent = true;
+        error.textContent += "⚠ Each password must be length 8.";
+    } 
+
     if (errorsPresent) {
         form.appendChild(error);
         return;
