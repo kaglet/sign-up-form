@@ -6,4 +6,7 @@ This is a demo sign-up form with simple custom validation messages, made with ht
 
 Find the live preview [here](https://kaglet.github.io/sign-up-form/).
 
+At full screen the page should look like this:
+![image](https://github.com/kaglet/sign-up-form/assets/96872447/f25d60d5-d587-4ca1-9bae-4348f5f6b346)
+
 *Note: If revisited mobile responsiveness may be added in later.*
